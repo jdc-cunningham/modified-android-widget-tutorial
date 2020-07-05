@@ -13,10 +13,11 @@ public class ExampleAppWidgetProvider extends AppWidgetProvider {
         for (int appWidgetId : appWidgetIds) {
             // add onclick listener
             Intent intent = new Intent(context, MainActivity.class);
+//            intent.putExtra(Intent.EXTRA_TEXT, "test string");
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.example_widget);
-            views.setOnClickPendingIntent(R.id.example_widget_button, pendingIntent);
+            views.setOnClickPendingIntent(R.id.example_widget_display, pendingIntent);
 
             appWidgetManager.updateAppWidget(appWidgetId, views);
         }

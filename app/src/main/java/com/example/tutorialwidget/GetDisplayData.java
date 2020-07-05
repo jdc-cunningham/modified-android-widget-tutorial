@@ -5,14 +5,19 @@ import android.util.Log;
 
 import java.io.BufferedInputStream;
 import java.io.BufferedOutputStream;
+import java.io.BufferedReader;
 import java.io.BufferedWriter;
+import java.io.IOException;
 import java.io.InputStream;
+import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.io.OutputStreamWriter;
 import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.Calendar;
 import java.util.Date;
+
+import android.widget.TextView;
 
 public class GetDisplayData extends AsyncTask<Void, Void, String> {
     private static final String TAG = "MainActivity";
@@ -49,7 +54,19 @@ public class GetDisplayData extends AsyncTask<Void, Void, String> {
         }
     }
 
-    private void readStream(InputStream in) {
+    private void readStream(InputStream in) throws IOException {
+        // from https://stackoverflow.com/questions/9856195/how-to-read-an-http-input-stream
+        BufferedReader reader = new BufferedReader(new InputStreamReader(in));
+        StringBuilder result = new StringBuilder();
+        String line;
+        while((line = reader.readLine()) != null) {
+            result.append(line);
+        }
+
+        Log.i(TAG, "API GET >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + result.toString());
+
+//        TextView widgetDisplay = MainActivity.findViewById(R.id.example_widget_display);
+//        widgetDisplay.setText(testString);
     }
 
     protected void onPostExecute(String data) {
