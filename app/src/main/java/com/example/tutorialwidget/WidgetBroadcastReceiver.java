@@ -10,8 +10,13 @@ public class WidgetBroadcastReceiver extends BroadcastReceiver {
 
    @Override
    public void onReceive(Context context, Intent intent) {
+       Log.i(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> broadcast receive");
+
        if (intent.getAction().equals(Intent.ACTION_USER_PRESENT)) {
            Log.i(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> user present");
+       }
+       if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
+           Log.i(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> screen on");
        }
    }
 }

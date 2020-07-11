@@ -14,13 +14,13 @@ import androidx.annotation.Nullable;
 public class WidgetService extends Service {
     WidgetBroadcastReceiver receiver = new WidgetBroadcastReceiver();
 
-//    @Override
-//    public void onCreate() {
-//        Log.i("WidgetService", ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> on create");
+    @Override
+    public void onCreate() {
+        Log.i("WidgetService", ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> on create");
 //        super.onCreate();
 //        IntentFilter filter = new IntentFilter(Intent.ACTION_USER_PRESENT);
 //        WidgetService.this.registerReceiver(receiver, filter);
-//    }
+    }
 //
 //    @Nullable
 //    @Override
