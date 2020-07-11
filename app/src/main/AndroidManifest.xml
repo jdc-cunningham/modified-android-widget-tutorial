@@ -27,6 +27,12 @@
                 android:name="android.appwidget.provider"
                 android:resource="@xml/example_appwidget_info" />
         </receiver>
+        <receiver android:name=".WidgetBroadcastReceiver" android:enabled="true">
+            <intent-filter>
+                <action android:name="android.intent.action.USER_PRESENT"></action>
+            </intent-filter>
+        </receiver>
+        <service android:name=".WidgetService" android:enabled="true" android:exported="false"></service>
     </application>
 
 </manifest>
