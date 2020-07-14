@@ -17,6 +17,7 @@ public class WidgetBroadcastReceiver extends BroadcastReceiver {
        }
        if (intent.getAction().equals(Intent.ACTION_SCREEN_ON)) {
            Log.i(TAG, ">>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> screen on");
+           new GetDisplayData().execute();
        }
    }
 }
