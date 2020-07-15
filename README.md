@@ -1,6 +1,6 @@
 ### About
 
-This is a basic widget for Android that pulls an API. It's very simple, it took me almost 2 weeks to get this to work with a lot of help as I'm not an Android developer. You can see the gif below of what it does. This app is related to the [Cross Platform App]() I made. The data displayed on this widget is pulled on a local API shared by mobile/desktop applications, the API is hosted on a Raspberry Pi.
+This is a basic widget for Android that pulls an API. It's very simple, it took me almost 2 weeks to get this to work with a lot of help as I'm not an Android developer. You can see the gif below of what it does. This app is related to the [Cross Platform App](https://github.com/jdc-cunningham/cross-platform-app) I made. The data displayed on this widget is pulled on a local API shared by mobile/desktop applications, the API is hosted on a Raspberry Pi.
 
 ![showing widget with desktop cross platform app](./demo.gif)
 
