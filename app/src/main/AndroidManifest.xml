@@ -33,7 +33,6 @@
                 <action android:name="android.intent.action.SCREEN_ON" />
             </intent-filter>
         </receiver>
-<!--        <service android:name=".WidgetService"/>-->
     </application>
 
 </manifest>

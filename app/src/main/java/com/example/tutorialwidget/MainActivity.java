@@ -2,16 +2,13 @@ package com.example.tutorialwidget;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Bundle;
-import android.util.Log;
 import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
-    private final String testString = "Test String";
     private static Context context;
     private TextView activityView;
 
@@ -33,7 +30,6 @@ public class MainActivity extends AppCompatActivity {
     // from https://stackoverflow.com/questions/2938502/sending-post-data-in-android
     protected void onStart() {
         super.onStart();
-        Log.i("MAIN", "onStart >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + R.layout.activity_main);
         new GetDisplayData(context).execute();
     }
 }
