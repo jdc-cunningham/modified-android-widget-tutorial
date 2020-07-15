@@ -5,7 +5,7 @@ This is a basic widget for Android that pulls an API. It's very simple, it took 
 ![showing widget with desktop cross platform app](./demo.gif)
 
 ### more background
-The basic part of this widget(ability to pin widget to home screen) came from this YouTube tutorial. I then figured out how to call an API in Android, how to listen to the a "phone is on" event which then calls the API and then I had to figure out how to bridge everything together to update the widget. The actual activity(screen that opens up when you click on Widget) isn't touched as I haven't bothered to modify that. I have a mobile app(from the Cross Platform App with React Native).
+The basic part of this widget(ability to pin widget to home screen) came from this [YouTube tutorial](https://www.youtube.com/watch?v=xGQJg31TPtU). I then figured out how to call an API in Android, how to listen to the a "phone is on" event which then calls the API and then I had to figure out how to bridge everything together to update the widget. The actual activity(screen that opens up when you click on Widget) isn't touched as I haven't bothered to modify that. I have a mobile app(from the Cross Platform App with React Native).
 
 I'll probably update this later on but yeah it was a struggle for me developing this.
 
