@@ -14,6 +14,11 @@ import android.widget.RemoteViews;
 public class ExampleAppWidgetProvider extends AppWidgetProvider {
     private static final String TAG = "AppWidgetProvider";
     WidgetBroadcastReceiver receiver = new WidgetBroadcastReceiver();
+    private String displayText;
+
+    public void setDisplayText(String textToDisplay) {
+        this.displayText = textToDisplay;
+    }
 
     @Override
     public void onUpdate(Context context, AppWidgetManager appWidgetManager, int[] appWidgetIds) {
@@ -31,6 +36,7 @@ public class ExampleAppWidgetProvider extends AppWidgetProvider {
             PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent, 0);
 
             RemoteViews views = new RemoteViews(context.getPackageName(), R.layout.example_widget);
+            Log.i(TAG, "UPDATE2 >>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>> " + context.getPackageName());
             views.setOnClickPendingIntent(R.id.example_widget_display, pendingIntent);
             views.setTextViewText(R.id.example_widget_display, "test text");
 
