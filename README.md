@@ -11,3 +11,5 @@ I'll probably update this later on but yeah it was a struggle for me developing 
 
 ### Bugs
 - there is some error that appears, I saw it in Logcat, it's about unregistering the `registerReceiver` I think. It does not seem detrimental but something to be aware of, this is not intended to be released for wide audience. I had to build the APK/transfer it to the phone/install it against all the warnings.
+
+Specifically it says `Activity com.example.tutorialwidget.MainActivity has leaked IntentReceiver`
