@@ -1,3 +1,6 @@
+#### Warning - this app might actually be detrimental eg. causing UI freeze
+Not sure if it's just my phone being cheap or big apps like Slack/Google Hangouts/Imgur being resource hogs. For the moment I'm testing with this app removed if my experience is better. I don't recommend installing this app, it's also very niche oriented.
+
 ### About
 
 This is a basic widget for Android that pulls an API. It's very simple, it took me almost 2 weeks to get this to work with a lot of help as I'm not an Android developer. You can see the gif below of what it does. This app is related to the [Cross Platform App](https://github.com/jdc-cunningham/cross-platform-app) I made. The data displayed on this widget is pulled on a local API shared by mobile/desktop applications, the API is hosted on a Raspberry Pi.
@@ -10,6 +13,7 @@ The basic part of this widget(ability to pin widget to home screen) came from th
 I'll probably update this later on but yeah it was a struggle for me developing this.
 
 ### Bugs
+
 - there is some error that appears, I saw it in Logcat, it's about unregistering the `registerReceiver` I think. It does not seem detrimental but something to be aware of, this is not intended to be released for wide audience. I had to build the APK/transfer it to the phone/install it against all the warnings.
 
 Specifically it says `Activity com.example.tutorialwidget.MainActivity has leaked IntentReceiver`
